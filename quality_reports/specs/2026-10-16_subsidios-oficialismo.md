@@ -72,7 +72,7 @@ con $c \in \{\text{nacional}, \text{provincial}, \text{municipal}\}$, $S_{m,t}$ 
 | Montos | ASSUMED | Deflactados a pesos constantes con el IPC mensual de INDEC según la fecha de cada expediente; la cantidad de expedientes como medida alternativa sin inflación |
 | Diseño de identificación | ASSUMED | Panel en diferencias respecto de 2019 con intensidad continua del gasto (arriba); `/strategize` lo valida. Amenaza principal: el gasto se asigna a partidos donde se espera ganar o perder votos |
 | Proyección 2027 | ASSUMED | Condicional a escenarios para el efecto común de elección de 2027, que no se puede estimar |
-| Idioma del manuscrito | ASSUMED | Inglés, para revistas internacionales |
+| Destino e idioma | CLEAR | Primero informe de política pública para la gestión (español); luego paper académico (inglés) |
 | Tipo de paper | ASSUMED | Reduced-form con ejercicio de proyección |
 
 ---

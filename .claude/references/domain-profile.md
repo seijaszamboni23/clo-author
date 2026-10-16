@@ -60,6 +60,7 @@ All agents read this file to calibrate their field-specific behavior.
 - Always discuss tactical allocation (spending targeted at swing or core voters) as the main endogeneity threat
 - Distinguish credit claiming / clarity of responsibility across government levels: since Dec 2023 the provincial (Kicillof) and national (Milei) incumbents are opponents, so provincial vs. national funding matters
 - Political alignment of each intendente with the provincial governor is a key moderator
+- Bypass: in opposition-led municipalities the province may route funds to local institutions and cooperatives instead of the municipal government; track the recipient type of each expediente
 
 ---
 
