@@ -27,3 +27,10 @@
 **Score:** 89/100
 **Verdict:** PASS; remaining: read Arcidiacono (2023) thesis (possible competitor), add Pacífico (2019), Niedzwiecki (2018), Golden & Min (2013), thin forecasting coverage
 **Report:** critic report relayed in session; follow-ups listed in quality_reports/literature/subsidios-oficialismo/positioning.md context
+
+### 2026-10-16 21:35 — librarian
+**Phase:** Discovery
+**Target:** Arcidiacono (2023) verified from slides supplied by the author
+**Score:** N/A
+**Verdict:** Proximity 3→4; same province and incumbent, single program (2021 graduation trip), +0.6 pp FdT; not a competitor to the six-type comparison
+**Report:** quality_reports/literature/subsidios-oficialismo/annotated_bibliography.md

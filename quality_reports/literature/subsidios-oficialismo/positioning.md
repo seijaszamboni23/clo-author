@@ -69,5 +69,5 @@ Para el **informe de política** (primer producto, en español), los antecedente
 ## 5. Riesgo de scooping
 
 - **Pizzi (2026), provisional:** solapa en el subsidio energético y en la elección de 2021. Hay que conseguir el paper y citarlo como complemento: un subsidio nacional, de un solo tipo.
-- **Arcidiacono (2023), sin verificar:** tesis MRes en Nottingham sobre viajes de egresados subsidiados. Si trata el programa bonaerense de 2021, es el antecedente más cercano en contexto. Hay que leerlo antes de redactar la contribución.
+- **Arcidiacono (2023), verificado con sus slides:** trata el viaje de egresados gratuito de la PBA, anunciado entre las PASO y las generales de 2021. Con un DiD por exposición a nivel de mesa encuentra cerca de +0,6 pp para FdT en la mesa promedio, con placebo nulo en 2019. Es el antecedente más cercano en contexto, pero estudia un solo programa en una ventana de dos meses, así que no compite con la comparación entre seis tipos. Citarlo como evidencia de que el gasto provincial dirigido rinde votos, y controlar ese programa en 2021.
 - No se encontraron working papers con la misma pregunta y los mismos datos en NBER, SSRN, IZA, CEDLAS, UdeSA, UTDT ni CIPPEC.

@@ -21,7 +21,7 @@ La escala es la del repositorio:
 
 Ningún trabajo obtiene 5: nadie estima el efecto electoral de varios tipos de subsidio provincial bonaerense. La sección "Directly Related" incluye solo trabajos con proximidad 4 y resultados conocidos.
 
-Pizzi (2026) es **provisional** en todo el documento, porque solo se vio el resumen del seminario. Arcidiacono (2023) podría ser un competidor directo, pero su contenido no pudo verificarse: queda en 3 hasta leerlo.
+Pizzi (2026) es **provisional** en todo el documento, porque solo se vio el resumen del seminario. Arcidiacono (2023) se verificó con sus slides: es el antecedente más cercano en contexto (proximidad 4), pero estudia un solo programa.
 
 ## Directly Related
 
@@ -320,14 +320,14 @@ Pizzi (2026) es **provisional** en todo el documento, porque solo se vio el resu
 - **Relevance:** Es el único trabajo encontrado sobre transferencias provinciales bonaerenses a municipios. Sirve para la amenaza de asignación estratégica y quizá como fuente de datos de la gestión anterior. Es un trabajo de grado, sin revisión por pares. Se mueve de "Directly Related" a esta sección porque no se conocen sus resultados.
 
 ### Arcidiacono (2023) — Government Spending and Voting Behaviour: Evidence from Subsidized Graduation Trips
-- **Journal:** Tesis MRes, University of Nottingham. **NO VERIFICADO (contenido)**
-- **Proximity:** 3
+- **Journal:** Working paper / tesis MRes, University of Nottingham (slides del 4 de julio de 2023, leídas el 2026-10-16)
+- **Proximity:** 4
 - **Category:** Gasto, transferencias y voto al oficialismo
 - **BibTeX key:** Arcidiacono2023_graduation_trips
-- **Main contribution:** Por el título, estudia el efecto electoral de viajes de egresados subsidiados. No se pudo acceder al texto ni al resumen, así que no se sabe el país, el programa ni los datos.
-- **Identification strategy:** Desconocida.
-- **Key finding:** Desconocido.
-- **Relevance:** **Posible competidor directo.** La PBA lanzó en 2021, año electoral, un programa de viajes de egresados gratuitos (según la prensa, unos 220.000 viajes). Si la tesis estudia ese programa, sería un subsidio provincial bonaerense evaluado contra el voto de 2021 y su proximidad subiría a 4 o 5. Hay que conseguir el texto antes de fijar el posicionamiento.
+- **Main contribution:** Estudia el "Programa Bonaerense de Turismo Estudiantil", el viaje de egresados gratuito para todos los egresados secundarios de la PBA (hasta AR$ 30.000). Kicillof lo anunció el 8 de octubre de 2021, entre las PASO (12 de septiembre) y las generales legislativas (14 de noviembre).
+- **Identification strategy:** DiD por exposición a nivel de mesa electoral. Usa la proporción de beneficiarios potenciales por mesa (de 0 a 8 %), que es cuasi aleatoria porque las mesas se asignan por apellido. El resultado es el cambio en el voto a FdT entre PASO y generales a Diputados nacionales. Incluye efectos fijos de municipio, controles por mesa y errores agrupados por municipio. Placebo: 2019.
+- **Key finding:** β = 0,120 (EE 0,045) con controles: 10 pp más de beneficiarios suben el voto a FdT en 1,2 pp (1,84 pp sin controles). En la mesa promedio, con 3,2 % de beneficiarios, el efecto es de unos 0,6 pp, cerca del 17 % de la suba de FdT entre PASO y generales (de 33,9 % a 37,4 %). El placebo de 2019 es nulo (0,012, EE 0,013). El efecto se concentra en mesas de ingreso bajo y alcanza a otros jóvenes, pero no a los padres.
+- **Relevance:** Es el antecedente más cercano en contexto: un subsidio provincial bonaerense, el mismo oficialismo y un efecto positivo sobre el voto en 2021. Confirma que un gasto provincial dirigido rinde votos y que su efecto es mayor en zonas pobres, lo que apoya la hipótesis 1. No compite con la contribución central, porque estudia un solo programa no incluido en tus seis, en una ventana de dos meses, solo en la categoría nacional y solo para 2021. Aporta dos cosas al diseño: (i) el voto por mesa y el padrón permiten medir la exposición con más detalle que el partido; (ii) el viaje de egresados es un gasto provincial omitido que coincide con 2021 y conviene controlar.
 
 ### Stokes (2005) — Perverse Accountability
 - **Journal:** American Political Science Review
@@ -685,7 +685,7 @@ Pizzi (2026) es **provisional** en todo el documento, porque solo se vio el resu
 
 ## Entradas no verificadas, omitidas y vacíos
 
-- **Provisionales:** Pizzi (2026) (solo el resumen del seminario) y Arcidiacono (2023) (solo título, autora, año y tipo).
+- **Provisionales:** Pizzi (2026) (solo el resumen del seminario).
 - **Datos bibliográficos incompletos o de memoria:**
   - Faltan volumen y páginas: Clerici et al. (2024) y Moscovich y Brusco (2018).
   - Volumen y páginas de memoria: Solé‑Ollé y Sorribas‑Navarro (2008, JPubE), Cox y McCubbins (1986), Dixit y Londregan (1996) y Lewis‑Beck y Stegmaier (2000).

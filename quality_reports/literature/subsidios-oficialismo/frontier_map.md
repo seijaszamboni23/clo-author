@@ -10,7 +10,7 @@ Organización: tema → trabajos → qué está resuelto, qué está abierto y q
 
 **Trabajos:**
 - *Semilla:* Levitt y Snyder (1997); Kriner y Reeves (2012); Manacorda, Miguel y Vigorito (2011); Bickers y Stein (1996); Finan y Mazzocco (2021).
-- *Programas únicos:* De La O (2013); Zucco (2013); Conover et al. (2020); Labonne (2013); Pop‑Eleches y Pop‑Eleches (2012); Chen (2013); Litschig y Morrison (2010); Arcidiacono (2023, sin verificar).
+- *Programas únicos:* De La O (2013); Zucco (2013); Conover et al. (2020); Labonne (2013); Pop‑Eleches y Pop‑Eleches (2012); Chen (2013); Litschig y Morrison (2010); Arcidiacono (2023, viaje de egresados PBA 2021).
 - *Síntesis y agregados:* Araújo (2021); Corrêa (2015); Imai, King y Velasco Rivera (2020).
 - *Teoría:* Cox y McCubbins (1986); Dixit y Londregan (1996).
 
@@ -54,7 +54,7 @@ Organización: tema → trabajos → qué está resuelto, qué está abierto y q
 - La AUH y el voto: ningún estudio causal encontrado.
 - El rendimiento del subsidio energético: solo Pizzi (2026, provisional), cerca de 5 pp por Zona Fría.
 - El período 2019–2025, con la gestión Kicillof, la gestión Milei y la elección desdoblada de 2025: ningún trabajo académico encontrado.
-- El posible competidor Arcidiacono (2023): sin verificar.
+- Arcidiacono (2023) verificado: viaje de egresados PBA 2021, +0,6 pp para FdT en la mesa promedio; un solo programa.
 
 **Para el proyecto:** este es el vacío principal. La amenaza de asignación estratégica está bien documentada para Argentina, de modo que el diseño debe tratarla en primer plano.
 
@@ -159,4 +159,4 @@ Organización: tema → trabajos → qué está resuelto, qué está abierto y q
 4. No se encontró ningún estudio cuantitativo sobre la intermediación de Argentina Trabaja, Ingreso Social con Trabajo o Potenciar Trabajo por cooperativas frente a municipios. Solo una etnografía (Pacífico 2019, omitida por el límite de entradas).
 5. Riesgo de scooping:
    - Pizzi (2026, provisional), limitado al subsidio energético.
-   - Arcidiacono (2023), sin verificar: hay que leerlo, porque puede tratar el programa provincial de viajes de egresados de 2021.
+   - Arcidiacono (2023), verificado: estudia el programa provincial de viajes de egresados de 2021; controlar ese gasto en 2021.
