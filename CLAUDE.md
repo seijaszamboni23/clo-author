@@ -140,7 +140,7 @@ Output organization: by-script
 | Component | File | Status | Description |
 |-----------|------|--------|-------------|
 | Paper | `paper/main.tex` | draft (esqueleto) | Efecto del gasto en subsidios sobre el voto al oficialismo |
-| Spec | `quality_reports/specs/2026-10-16_subsidios-oficialismo.md` | in-progress | Provincia de Buenos Aires, 2019–2027, seis tipos de subsidio; datos y diseño por cerrar |
+| Spec | `quality_reports/specs/2026-10-16_subsidios-oficialismo.md` | in-progress | PBA 2019–2027: línea de base 2019, panel 2021–2025, proyección 2027 |
 | Data | `scripts/R/` | not started | Resultados electorales + gasto en subsidios por unidad territorial |
 | Replication | `paper/replication/` | not started | -- |
 | Job Market Talk | `paper/talks/job_market_talk.tex` | -- | -- |
