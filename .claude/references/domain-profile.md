@@ -26,15 +26,16 @@ All agents read this file to calibrate their field-specific behavior.
 
 ## Common Data Sources
 
-<!-- [ASSUMED] Country not yet fixed; the Explorer replaces this generic list once it is. -->
+<!-- Setting: Province of Buenos Aires, Argentina, 2019–2027; 135 municipalities (partidos). Access to be confirmed by /discover data. -->
 
 | Dataset | Type | Access | Notes |
 |---------|------|--------|-------|
-| Official electoral results by municipality / precinct | admin | public | Electoral authority; harmonize party labels and coalitions across elections |
+| Electoral results by partido / circuito / mesa (Dirección Nacional Electoral; Junta Electoral PBA) | admin | public | 2019, 2021, 2023, 2025; 2025 provincial election held separately on 7 Sep 2025; harmonize coalition labels (FdT/UxP/Fuerza Patria, JxC, LLA) |
+| PBA budget execution and transfers to municipalities (Ministerio de Economía PBA) | admin | public | Obra pública and other municipal transfers |
+| Program-level records: Plan Más Vida, child and adolescent care devices, IPAC cooperatives, rural roads, energy subsidies | admin | to confirm | Which level of government pays each one decides credit attribution |
+| INDEC Censo 2022 and EPH | survey | public | Baseline covariates by partido; EPH covers only Gran Buenos Aires and urban agglomerates |
 | Subsidy / transfer spending by territorial unit | admin | public or restricted | Budget execution or program registries; check whether it records allocation or actual payment, and timing relative to elections |
-| Program beneficiary registries | admin | restricted | Needed for individual- or household-level designs (e.g., eligibility scores) |
-| Census / household surveys | survey | public | Baseline covariates and pre-treatment characteristics (Table 1) |
-| Opinion surveys (Latinobarómetro, LAPOP, national polls) | survey | public | Reported government support; complements vote shares |
+| Opinion surveys (Latinobarómetro, LAPOP, provincial polls) | survey | public | Reported government support; complements vote shares |
 
 ---
 
@@ -57,7 +58,8 @@ All agents read this file to calibrate their field-specific behavior.
 - Spending measured per capita and timed relative to the election (pre-election year vs. earlier)
 - Cluster standard errors at the level where spending is assigned (municipality / province), or by score bins in RDD
 - Always discuss tactical allocation (spending targeted at swing or core voters) as the main endogeneity threat
-- Distinguish credit claiming / clarity of responsibility across government levels
+- Distinguish credit claiming / clarity of responsibility across government levels: since Dec 2023 the provincial (Kicillof) and national (Milei) incumbents are opponents, so provincial vs. national funding matters
+- Political alignment of each intendente with the provincial governor is a key moderator
 
 ---
 
