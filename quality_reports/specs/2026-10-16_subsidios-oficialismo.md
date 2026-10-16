@@ -66,7 +66,10 @@ con $c \in \{\text{nacional}, \text{provincial}, \text{municipal}\}$, $S_{m,t}$ 
 | Oficialismo | CLEAR | La lista del espacio que gobierna la provincia, medida en las tres categorías (nacional, provincial, municipal) |
 | Nivel de gobierno que paga cada subsidio | CLEAR | Los seis son provinciales (autor) |
 | Disponibilidad de datos por municipio y año | CLEAR | El autor tiene cantidad de subsidios y montos por municipio; falta cargarlos en `data/raw/` |
-| Frecuencia del gasto | ASSUMED | Anual; si hay datos mensuales se usa el gasto de los 12 meses previos a cada elección |
+| Frecuencia del gasto | CLEAR | Diaria, por expediente: fecha de aprobación en todos y fecha de pago en una parte (autor) |
+| Fecha que define el tratamiento | ASSUMED | Aprobación en la especificación principal (cubre todos los expedientes); pago como robustez en el subconjunto que la tiene |
+| Ventana de gasto | ASSUMED | Gasto entre una elección y la siguiente; como alternativa, los 12 y los 6 meses previos a cada elección |
+| Montos | ASSUMED | Deflactados a pesos constantes con el IPC mensual de INDEC según la fecha de cada expediente; la cantidad de expedientes como medida alternativa sin inflación |
 | Diseño de identificación | ASSUMED | Panel en diferencias respecto de 2019 con intensidad continua del gasto (arriba); `/strategize` lo valida. Amenaza principal: el gasto se asigna a partidos donde se espera ganar o perder votos |
 | Proyección 2027 | ASSUMED | Condicional a escenarios para el efecto común de elección de 2027, que no se puede estimar |
 | Idioma del manuscrito | ASSUMED | Inglés, para revistas internacionales |
