@@ -5,9 +5,9 @@
      Keep this file under ~150 lines — Claude loads it every session.
      See the guide at https://hugosantanna.github.io/clo-author/ for full documentation. -->
 
-**Project:** [YOUR PROJECT NAME]
+**Project:** Subsidios y voto al oficialismo — efectos electorales del gasto público en subsidios
 **Institution:** [YOUR INSTITUTION]
-**Field:** [YOUR FIELD — Economics by default. Can be adapted to Finance, Accounting, Marketing, etc.]
+**Field:** Political Economy (economía política; ver `.claude/references/domain-profile.md`)
 **Branch:** main
 
 ---
@@ -139,7 +139,8 @@ Output organization: by-script
 
 | Component | File | Status | Description |
 |-----------|------|--------|-------------|
-| Paper | `paper/main.tex` | [draft/submitted/R&R] | [Brief description] |
-| Data | `scripts/R/` | [complete/in-progress] | [Analysis description] |
-| Replication | `paper/replication/` | [not started/ready] | [Deposit status] |
-| Job Market Talk | `paper/talks/job_market_talk.tex` | -- | [Status] |
+| Paper | `paper/main.tex` | draft (esqueleto) | Efecto del gasto en subsidios sobre el voto al oficialismo |
+| Spec | `quality_reports/specs/2026-10-16_subsidios-oficialismo.md` | in-progress | Pregunta, país, datos y diseño por cerrar en `/discover interview` |
+| Data | `scripts/R/` | not started | Resultados electorales + gasto en subsidios por unidad territorial |
+| Replication | `paper/replication/` | not started | -- |
+| Job Market Talk | `paper/talks/job_market_talk.tex` | -- | -- |

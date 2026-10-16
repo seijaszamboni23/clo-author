@@ -1,127 +1,124 @@
 # Domain Profile
 
 <!--
-HOW TO USE: Fill this in manually OR let /discover (interactive interview) generate it.
+Filled for the project "Subsidios y voto al oficialismo" (2026-10-16). Entries marked [ASSUMED]
+are defaults chosen before the research interview; /discover interview should confirm or replace them.
 All agents read this file to calibrate their field-specific behavior.
-Delete sections that don't apply. Add sections specific to your field.
-If no field is specified, agents default to applied economics.
 -->
 
 ## Field
 
-**Primary:** [e.g., Health Economics, Labor Economics, Development, IO, Public Finance]
-**Adjacent subfields:** [e.g., Labor, Public, IO — fields whose methods and journals overlap]
+**Primary:** Political Economy (distributive politics, retrospective voting, clientelism)
+**Adjacent subfields:** Public Finance (intergovernmental transfers, subsidies), Development (cash transfers), Political Science (electoral behavior)
 
 ---
 
 ## Target Journals (ranked by tier)
 
-<!-- The Orchestrator uses this for journal selection. The Librarian prioritizes these in searches. -->
-
 | Tier | Journals |
 |------|----------|
 | Top-5 | AER, Econometrica, JPE, QJE, REStud |
-| Top field | [e.g., JHE, RAND JE, AEJ:EP, AEJ:Applied] |
-| Strong field | [e.g., Health Affairs, AJHE, JPubE, JHR] |
-| Specialty | [e.g., Medical Care, Health Services Research] |
+| Top field | AEJ: Applied, AEJ: Economic Policy, JPubE, JEEA, APSR, AJPS |
+| Strong field | JDE, Journal of Politics, EJPE, BJPolS, QJPS, Economics & Politics |
+| Specialty | Public Choice, Electoral Studies, JEPP, Latin American Economic Review |
 
 ---
 
 ## Common Data Sources
 
-<!-- The Explorer prioritizes these. The explorer-critic knows their quirks. -->
+<!-- [ASSUMED] Country not yet fixed; the Explorer replaces this generic list once it is. -->
 
 | Dataset | Type | Access | Notes |
 |---------|------|--------|-------|
-| [e.g., CPS] | [survey/admin/panel] | [public/restricted] | [key strengths and limitations] |
+| Official electoral results by municipality / precinct | admin | public | Electoral authority; harmonize party labels and coalitions across elections |
+| Subsidy / transfer spending by territorial unit | admin | public or restricted | Budget execution or program registries; check whether it records allocation or actual payment, and timing relative to elections |
+| Program beneficiary registries | admin | restricted | Needed for individual- or household-level designs (e.g., eligibility scores) |
+| Census / household surveys | survey | public | Baseline covariates and pre-treatment characteristics (Table 1) |
+| Opinion surveys (Latinobarómetro, LAPOP, national polls) | survey | public | Reported government support; complements vote shares |
 
 ---
 
 ## Common Identification Strategies
 
-<!-- The Strategist considers these first. The strategist-critic knows field-specific threats. -->
-
 | Strategy | Typical Application | Key Assumption to Defend |
 |----------|-------------------|------------------------|
-| [e.g., State-level DiD] | [Policy variation across states] | [Parallel trends in outcomes across treated/control states] |
+| RDD on eligibility score | Program assignment by a poverty/income index (Manacorda, Miguel & Vigorito 2011) | No manipulation of the score; continuity of potential outcomes at the cutoff |
+| Close-election RDD on political alignment | Transfers to aligned vs. non-aligned mayors (Brollo & Nannicini 2012) | No sorting in close races; alignment is the only discontinuous attribute |
+| DiD / event study with staggered rollout | Program expansion across municipalities over time | Parallel trends in incumbent vote share; heterogeneity-robust estimators |
+| IV / formula-based allocation | Spending driven by rules or exogenous shifts (Levitt & Snyder 1997 use other districts' spending) | Exclusion restriction: instrument affects votes only through spending |
+| Panel with unit and election FE | Spending changes and vote-share changes (Kriner & Reeves 2012) | Spending not targeted on anticipated vote swings (reverse causality from tactical allocation) |
 
 ---
 
 ## Field Conventions
 
-<!-- The Coder and Writer follow these. The writer-critic checks for them. -->
-
-- [e.g., Binary outcomes → report LPM alongside logit/probit marginal effects]
-- [e.g., Cost outcomes → log transform or GLM (Gamma, log link)]
-- [e.g., Clustering at state level for state-level policy variation]
-- [e.g., Always discuss moral hazard / adverse selection implications]
-- [e.g., Welfare analysis expected in top-5 submissions]
+- Main outcome: incumbent (oficialismo) vote share at the territorial unit; also turnout and reported support where surveys exist
+- Define "oficialismo" explicitly by level (national, subnational) and handle coalitions and party switches consistently
+- Spending measured per capita and timed relative to the election (pre-election year vs. earlier)
+- Cluster standard errors at the level where spending is assigned (municipality / province), or by score bins in RDD
+- Always discuss tactical allocation (spending targeted at swing or core voters) as the main endogeneity threat
+- Distinguish credit claiming / clarity of responsibility across government levels
 
 ---
 
 ## Notation Conventions
 
-<!-- The Writer and writer-critic enforce these. -->
-
 | Symbol | Meaning | Anti-pattern |
 |--------|---------|-------------|
-| [e.g., $Y_{it}$] | [Outcome for individual i at time t] | [Don't use $y$ without subscripts] |
+| $V_{mt}$ | Incumbent vote share in unit $m$, election $t$ | Don't use $Y$ for vote share and another outcome interchangeably |
+| $S_{mt}$ | Subsidy spending per capita in unit $m$ before election $t$ | Don't mix levels and per-capita amounts under one symbol |
+| $A_{mt}$ | Political alignment of the local executive with the incumbent | -- |
 
 ---
 
 ## Seminal References
 
-<!-- The Librarian ensures these are cited when relevant. The strategist-critic knows their methods. -->
-
 | Paper | Why It Matters |
 |-------|---------------|
-| [e.g., Finkelstein et al. (2012)] | [Oregon HIE — gold standard for insurance effects] |
+| Levitt & Snyder (1997, JPE) | Instruments House-district spending; spending raises incumbent vote share |
+| Bickers & Stein (1996, AJPS) | Pork-barrel dynamics and challenger entry |
+| Manacorda, Miguel & Vigorito (2011, AEJ: Applied) | RDD on PANES eligibility; cash transfers raise government support |
+| Brollo & Nannicini (2012, APSR) | Close-race RDD; aligned mayors get more transfers before elections |
+| Kriner & Reeves (2012, APSR) | Federal spending rewards incumbent presidents at county level |
+| Kriner & Reeves (2015, APSR) | Presidential particularism in allocation (swing and core counties) |
+| Vergne (2009, EJPE) | Election-year shift toward subsidies and current spending in developing countries |
+| Finan & Mazzocco (2021, JEEA) | Structural model of legislators' electoral allocation of public funds |
+| Vergioglou (2023, JEPP) | EU regional investment subsidies and eurosceptic vote |
 
 ---
 
 ## Theoretical Foundational References
 
-<!-- The Theorist and theorist-critic default to these anchors when building or reviewing a theory section.
-     Only needed if the paper has a formal theory section (econometric methods, theory+empirics,
-     structural identification, or methodological reduced-form).
-     Leave empty to fall back to the generic econometric theory defaults baked into the theorist agent. -->
+<!-- Fill only if the paper adds a formal model (e.g., Cox & McCubbins 1986; Dixit & Londregan 1996 on swing vs. core targeting). -->
 
 | Topic | Anchor references |
 |-------|------------------|
-| [e.g., DiD with staggered adoption] | [e.g., Callaway & Sant'Anna (2021); Sant'Anna & Zhao (2020)] |
-| [e.g., Semiparametric efficiency] | [e.g., Newey (1990, 1994); Bickel-Klaassen-Ritov-Wellner (1993)] |
+| [Swing vs. core voter targeting] | [to confirm in /discover lit] |
 
 ---
 
 ## Paper Author Team
 
-<!-- Used by the theorist-critic to calibrate respect. If the authors are themselves among the reference
-     literature on a topic, the critic avoids lecturing them on their own contributions.
-     List author surnames + the topics they are foundational on. -->
-
 | Author | Foundational on |
 |--------|----------------|
-| [e.g., Callaway] | [DiD with staggered adoption, $ATT(g,t)$] |
+| [Author surnames] | [--] |
 
 ---
 
 ## Field-Specific Referee Concerns
 
-<!-- The domain-referee and methods-referee watch for these. -->
-
-- [e.g., "Why not use the Oregon HIE?" — must address if studying insurance effects]
-- [e.g., "Selection into treatment" — always a concern in health care utilization studies]
-- [e.g., "Moral hazard vs adverse selection" — referees expect you to distinguish]
-- [e.g., "External validity" — Medicaid population ≠ general population]
+- "Spending is allocated strategically" — reverse causality from tactical targeting of swing or core units
+- "Who gets the credit?" — which level of government voters attribute the subsidy to
+- "Is it the subsidy or the economy?" — confounding with local economic conditions
+- "Turnout vs. persuasion" — whether effects come from mobilization or vote switching
+- "Clientelism vs. programmatic transfers" — discretionary vs. rule-based allocation
 
 ---
 
 ## Quality Tolerance Thresholds
 
-<!-- Customize for your domain's standards. Used by quality.md. -->
-
 | Quantity | Tolerance | Rationale |
 |----------|-----------|-----------|
-| Point estimates | [e.g., 1e-6] | [Numerical precision] |
-| Standard errors | [e.g., 1e-4] | [MC variability] |
-| Coverage rates | [e.g., ± 0.01] | [Simulation with B reps] |
+| Point estimates | 1e-6 | Numerical precision |
+| Standard errors | 1e-4 | Bootstrap / clustering variability |
+| Vote shares | 0.1 pp | Rounding in official results |
